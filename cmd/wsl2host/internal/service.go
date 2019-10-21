@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shayne/go-wsl2-host/cmd/wsl2host/pkg/service"
+	"github.com/CL-Jeremy/go-wsl2-host/cmd/wsl2host/pkg/service"
 	"golang.org/x/sys/windows/svc"
 	"golang.org/x/sys/windows/svc/debug"
 	"golang.org/x/sys/windows/svc/eventlog"

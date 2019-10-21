@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/shayne/go-wsl2-host/pkg/wslcli"
+	"github.com/CL-Jeremy/go-wsl2-host/pkg/wslcli"
 )
 
 // DistroInfo data structure for state of a WSL distro

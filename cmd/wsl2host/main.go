@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/shayne/go-wsl2-host/cmd/wsl2host/internal"
+	"github.com/CL-Jeremy/go-wsl2-host/cmd/wsl2host/internal"
 	"golang.org/x/sys/windows/svc"
 )
 

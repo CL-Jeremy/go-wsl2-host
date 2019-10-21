@@ -66,7 +66,7 @@ func GetHostIP() (string, error) {
 	if err != nil {
 		return "", err
 	}
-	ipRegex := regexp.MustCompile("IP Address:\040*(.*)\r\n")
+	ipRegex := regexp.MustCompile("IP.*:\040*(.*)\r\n")
 	ipString := ipRegex.FindStringSubmatch(string(out))
 	if len(ipString) != 2 {
 		return "", errors.New(`netsh interface ip show address "vEthernet (WSL)"`)

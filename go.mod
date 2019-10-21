@@ -1,4 +1,4 @@
-module github.com/shayne/go-wsl2-host
+module github.com/CL-Jeremy/go-wsl2-host
 
 go 1.12
 

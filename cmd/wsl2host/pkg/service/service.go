@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/shayne/go-wsl2-host/pkg/hostsapi"
+	"github.com/CL-Jeremy/go-wsl2-host/pkg/hostsapi"
 
-	"github.com/shayne/go-wsl2-host/pkg/wslapi"
+	"github.com/CL-Jeremy/go-wsl2-host/pkg/wslapi"
 )
 
 const tld = ".wsl"
