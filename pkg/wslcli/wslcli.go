@@ -45,7 +45,7 @@ func ListAll() (string, error) {
 // Suggest check if running before calling this function as
 // it has the side-effect of starting the distro
 func GetIP(name string) (string, error) {
-	cmd := exec.Command("wsl.exe", "-d", name, "--", "hostname", "-I")
+	cmd := exec.Command("wsl.exe", "-d", name, "bash", "-c", "ip a | sed -nE '/inet (169\134.254|127)/! s/.*inet (.*)\134/..? brd.*/\1341/p' | tr '\134n' ' '")
 	out, err := cmd.Output()
 	if err != nil {
 		return "", err
